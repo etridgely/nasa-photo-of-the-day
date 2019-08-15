@@ -11,7 +11,7 @@ export default function NasaFrame() {
             .then(response => {
                 const spaceImage = response.data;
                 console.log(spaceImage);
-                setImage(image);
+                setImage(spaceImage);
             });
     })
 
@@ -20,7 +20,7 @@ export default function NasaFrame() {
             <div className="NasaCard">
             <NasaCard 
             key="ss" 
-            url={image.hdurl}
+            url={image.url}
             title={image.title}
             date={image.date}
             explanation={image.explanation}
