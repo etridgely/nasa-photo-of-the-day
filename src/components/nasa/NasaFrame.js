@@ -8,7 +8,7 @@ export default function NasaFrame() {
 
     useEffect(() => {
         axios
-            .get(`https://api.nasa.gov/planetary/apod?api_key=gc89VrA1LGglb6skf82gAvA3e6iOaimhjCypIBKR/`)
+            .get(`https://api.nasa.gov/planetary/apod?api_key=gc89VrA1LGglb6skf82gAvA3e6iOaimhjCypIBKR`)
             .then(response => {
                 const spaceImage = response.data;
                 console.log(spaceImage);
@@ -18,7 +18,7 @@ export default function NasaFrame() {
 
     return (
         <Container className="container">
-            <div className="NasaCard">
+            <div className="cardStyle">
             <NasaCard 
             key="ss" 
             url={image.url}
@@ -27,7 +27,7 @@ export default function NasaFrame() {
             explanation={image.explanation}
             />
             </div>
-            <button onClick={() => setImage("Nasa Image")}>New Image, Please!</button>
+            <button className="button" onClick={() => setImage("Nasa Image")}>New Image, Please!</button>
         </Container>
     );
 }

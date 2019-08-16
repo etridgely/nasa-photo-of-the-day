@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #89cff0;
 }
 
 .App-logo {
@@ -31,3 +32,24 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  margin: 2%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.nasa-card {
+  display: flex;
+  justify-content: center; 
+  margin: 2%
+}
+
+.nasa-card ui {
+  width: 750px;
+}
+
